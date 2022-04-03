@@ -12,6 +12,7 @@
   --logo-web-secondary: #2196f3;
   --logo-studio-secondary: #ffffff;
   --primary-border-color: #ececec;
+  --primary-icon-color: #afb1b8;
 }
 
 body {
@@ -129,9 +130,17 @@ h6 {
   letter-spacing: 0.02em;
 }
 
+.auth-nav .item:hover {
+  fill: var(--accent-color);
+}
 .auth-nav .item:not(:last-child) {
   margin-right: 50px;
 }
+
+.auth-nav .icon {
+  fill: currentColor;
+}
+
 .auth-nav .link {
   color: var(--primary-text-color);
 }
@@ -143,9 +152,24 @@ h6 {
 
 /* Hero */
 .hero {
+  min-width: 100%;
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+
   text-align: center;
 
   background-color: var(--hero-bg-color);
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(../images/banner.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   color: var(--primary-bg-color);
 }
 
@@ -213,6 +237,18 @@ h6 {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
+}
+.feature-list .thumb {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+
+  background-color: var(--secondary-bg-color);
 }
 
 .feature-list .text {
@@ -290,7 +326,38 @@ h6 {
 .staff-list .position {
   color: var(--primary-text-color);
 
+  margin-bottom: 16px;
+}
+
+.staff-social {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 30px;
+  width: 206px;
+  height: 44px;
+}
+
+.staff-social .link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  fill: var(--primary-icon-color);
+}
+
+.staff-social .link:hover {
+  background-color: var(--accent-color);
+  fill: var(--primary-bg-color);
+}
+
+.staff-social .item-icon:not(:last-child) {
+  margin-right: 10px;
 }
 
 /* Footer */
@@ -338,6 +405,11 @@ h6 {
 .footer-auth:hover,
 .footer-auth:focus {
   color: var(--accent-color);
+}
+
+.footer-social .links {
+  display: inline-flex;
+  outline: 2px solid tomato;
 }
 
 /* PORTFOLIO.HTML */
