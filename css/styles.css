@@ -138,10 +138,15 @@ h6 {
 }
 
 .auth-nav .icon {
+  width: 16px;
+  height: 12px;
+  margin-right: 6px;
   fill: currentColor;
 }
 
 .auth-nav .link {
+  display: flex;
+  align-items: center;
   color: var(--primary-text-color);
 }
 
