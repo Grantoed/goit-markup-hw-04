@@ -59,7 +59,7 @@ h6 {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
-  }
+}
 
 .container {
   width: 1200px;
@@ -562,9 +562,8 @@ h6 {
 }
 
 .portfolio-examples .item:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-  0px 4px 4px rgba(0, 0, 0, 0.06),
-  1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-examples .item:nth-child(3n) {
